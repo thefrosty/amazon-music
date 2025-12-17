@@ -1,0 +1,8 @@
+services:
+  amazon-music:
+    image: amazon-music
+    build:
+      context: .
+    volumes:
+      - "./downloads:/app/downloads"
+    stdin_open: true
